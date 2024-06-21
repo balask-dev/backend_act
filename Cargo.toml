@@ -1,6 +1,6 @@
 [package]
 name = "Backend"
-actix-web = { version = "3", features = ["openssl"] }
+actix-web = { version = "4", features = ["openssl"] }
 serde = "1.0.152"
 dotenv = "0.15.0"
 futures = "0.3"
