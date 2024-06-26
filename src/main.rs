@@ -15,6 +15,11 @@ async fn resp(req_body: String) -> impl Responder {
 async fn create(req_body: String) -> impl Responder {
     HttpResponse::Ok().body(req_body)
 }
+
+#[post("/get")]
+async fn get(req_body: String) -> impl Responder {
+    HttpResponse::Ok().body(req_body)
+}
 // async fn manual_hello() -> impl Responder {
 //     HttpResponse::Ok().body("Hey there!")
 // }
