@@ -20,9 +20,9 @@ async fn create(req_body: String) -> impl Responder {
 async fn get(req_body: String) -> impl Responder {
     HttpResponse::Ok().body(req_body)
 }
-// async fn manual_hello() -> impl Responder {
-//     HttpResponse::Ok().body("Hey there!")
-// }
+async fn manual_hello() -> impl Responder {
+    HttpResponse::Ok().body("Hey there!")
+}
 
 #[get("/")]
 async fn init()-> impl Responder{
